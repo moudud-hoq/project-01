@@ -2,7 +2,11 @@
 
 @layer components {
     .tailwindtest {
-        @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+        @apply bg-blue-500;
+    }
+
+    .fontcheckh {
+        @apply text-4xl font-bold text-green-800 mb-2;
     }
 
 }

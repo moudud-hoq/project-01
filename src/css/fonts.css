@@ -1,0 +1,7 @@
+/* src/css/fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
