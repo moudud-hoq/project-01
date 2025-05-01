@@ -1,29 +1,4 @@
-.custom{
-    font: var(--font-serif);
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.fontcheckh{
-    font-family: var(--font-poppins);
-    font-size: 34px;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.fontcheckp{
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-    font-family: var(--font-poppins);
-    font-weight: normal;
-    line-height: 1.5;   
-    text-align: justify;
-    margin: 0 0 10px 0; 
-    padding: 0 10px;
-    text-indent: 2em;
-    text-justify: inter-word;
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-family: 'Integral CF', sans-serif;
 }

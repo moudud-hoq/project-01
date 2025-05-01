@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
-@layer components {
-    .tailwindtest {
-        @apply bg-blue-500;
+/* Custom font utilities */
+@layer utilities {
+    .font-satoshi {
+        font-family: 'Satoshi', sans-serif;
     }
 
-    .fontcheckh {
-        @apply text-4xl font-bold text-green-800 mb-2;
+    .font-integral {
+        font-family: 'Integral CF', sans-serif;
     }
+}
+
+
+@layer components {
+    body {
+        @apply max-w-[1440px] mx-auto;
+    }
+
 
 }
