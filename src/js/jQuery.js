@@ -37,4 +37,13 @@ $(document).ready(function () {
         ]
     });
 
+    // Magnific Popup
+    $('.popup-link').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
+
 });
