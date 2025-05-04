@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('/src/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
-         url('/src/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff');
+        url('/src/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Integral CF';
     src: url('/path-to-your-fonts/IntegralCF-Regular.woff2') format('woff2'),
-         url('/path-to-your-fonts/IntegralCF-Regular.woff') format('woff');
+        url('/path-to-your-fonts/IntegralCF-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,17 +30,20 @@
 
 @layer components {
     body {
-        @apply  mx-auto ;
+        @apply mx-auto;
     }
 
-    .hero-number-area{
+    .hero-number-area {
         @apply text-[40px] font-bold;
     }
 
     /* Product Area */
-    .product-title{
+    .product-title {
         @apply font-bold text-xl;
     }
 
-
+    /* Button */
+    .viewall {
+        @apply text-[16px] font-normal py-4 px-[54px] rounded-full border-2 border-gray-200 hover:bg-amber-100 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out transform;
+    }
 }
