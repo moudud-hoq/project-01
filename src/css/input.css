@@ -39,7 +39,7 @@
 
     /* Product Area */
     .product-title{
-        @apply font-bold text-xl
+        @apply font-bold text-xl;
     }
 
 
