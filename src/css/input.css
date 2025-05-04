@@ -30,7 +30,11 @@
 
 @layer components {
     body {
-        @apply max-w-[1440px] mx-auto font-Satoshi;
+        @apply  mx-auto ;
+    }
+
+    .hero-number-area{
+        @apply text-[40px] font-bold;
     }
 
 
