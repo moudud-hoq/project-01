@@ -37,5 +37,10 @@
         @apply text-[40px] font-bold;
     }
 
+    /* Product Area */
+    .product-title{
+        @apply font-bold text-xl
+    }
+
 
 }
