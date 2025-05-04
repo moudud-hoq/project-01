@@ -12,6 +12,16 @@
         href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&family=Integral+CF:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Waypoints (required by Counter-Up) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Counter-Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
 </head>
 
 <body>
@@ -31,7 +41,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <div class="head-bottom max-w-[1240px] m-auto pt-6 pb-16 font-satoshi text-[16px] font-normal">
             <div class="flex items-center justify-between gap-10">
@@ -89,15 +99,24 @@
                 </div>
                 <div class="flex gap-16 mt-12">
                     <div>
-                        <h3 class="hero-number-area">200+</h3>
+                        <div class="flex items-center">
+                            <h3 class="hero-number-area counter">200</h3>
+                            <span class="hero-number-area">+</span>
+                        </div>
                         <p>International Brands</p>
                     </div>
                     <div>
-                        <h3 class="hero-number-area">2,000+</h3>
+                        <div class="flex items-center">
+                            <h3 class="hero-number-area counter">2,000</h3>
+                            <span class="hero-number-area">+</span>
+                        </div>
                         <p>High-Quality Products</p>
                     </div>
                     <div>
-                        <h3 class="hero-number-area">30,000+</h3>
+                        <div class="flex items-center">
+                            <h3 class="hero-number-area counter">30,000</h3>
+                            <span class="hero-number-area">+</span>
+                        </div>
                         <p>Happy Customers</p>
                     </div>
                 </div>
@@ -108,6 +127,23 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!-- js -->
+
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000 // animation duration in milliseconds
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
