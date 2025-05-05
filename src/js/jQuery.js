@@ -46,4 +46,28 @@ $(document).ready(function () {
     });
 
 
+    $('.slider-for').slick({
+        slidesToShow: 3, // or 1 or 2 based on your design
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '80px',
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 });
