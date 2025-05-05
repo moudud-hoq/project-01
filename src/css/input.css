@@ -56,6 +56,9 @@
     .common-design-of-footer-menu {
         @apply text-[16px] font-normal text-gray-600;
     }
+    .common-design-of-footer-menu:hover {
+        @apply text-red-600;
+    }
 
 
 }
