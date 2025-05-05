@@ -50,10 +50,11 @@ $(document).ready(function () {
         slidesToShow: 3, // or 1 or 2 based on your design
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '80px',
+        centerPadding: '60px',
         arrows: true,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1024,
