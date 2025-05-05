@@ -13,7 +13,6 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
@@ -22,8 +21,6 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -307,12 +304,6 @@
   .w-\[330px\] {
     width: 330px;
   }
-  .w-\[349px\] {
-    width: 349px;
-  }
-  .w-\[551px\] {
-    width: 551px;
-  }
   .w-\[577px\] {
     width: 577px;
   }
@@ -427,9 +418,6 @@
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -461,6 +449,9 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
   }
   .bg-\[\#F0F0F0\] {
     background-color: #F0F0F0;
@@ -498,12 +489,6 @@
   .px-14 {
     padding-inline: calc(var(--spacing) * 14);
   }
-  .px-16 {
-    padding-inline: calc(var(--spacing) * 16);
-  }
-  .px-\[87px\] {
-    padding-inline: 87px;
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -525,14 +510,17 @@
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
   }
-  .py-\[36px\] {
-    padding-block: 36px;
+  .py-\[170px\] {
+    padding-block: 170px;
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -548,6 +536,9 @@
   }
   .pt-\[72px\] {
     padding-top: 72px;
+  }
+  .pt-\[140px\] {
+    padding-top: 140px;
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
@@ -608,9 +599,6 @@
   .text-\[32px\] {
     font-size: 32px;
   }
-  .text-\[40px\] {
-    font-size: 40px;
-  }
   .text-\[64px\] {
     font-size: 64px;
   }
@@ -633,10 +621,6 @@
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
-  }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
   }
   .text-\[\#f33\] {
     color: #f33;
