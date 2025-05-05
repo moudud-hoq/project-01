@@ -44,6 +44,19 @@
 
     /* Button */
     .viewall {
-        @apply text-[16px] font-normal py-4 px-[54px] rounded-full border-2 border-gray-200 hover:bg-amber-100 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out transform;
+        @apply text-[16px] font-normal py-4 px-[54px] rounded-full border-2 border-gray-200 hover: bg-amber-100 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out transform;
     }
+
+
+    /* Browse by Style */
+    .gridSingleContainer {
+        @apply bg-white rounded-[20px] overflow-hidden;
+    }
+
+    .singleBoxTitle {
+        @apply pl-9 pt-6 text-4xl font-bold;
+    }
+
+
+
 }
