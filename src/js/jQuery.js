@@ -52,6 +52,8 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '60px',
         arrows: true,
+        prevArrow: $('.custom-prev'),
+        nextArrow: $('.custom-next'),
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
