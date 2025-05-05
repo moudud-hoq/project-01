@@ -43,7 +43,7 @@
     }
 
     .off {
-        @apply hover: bg-red-200 cursor-pointer text-[#f33] text-xs font-medium rounded-full block px-3.5 py-1.5 bg-red-100
+        @apply hover:bg-red-200 cursor-pointer text-[#f33] text-xs font-medium rounded-full block px-3.5 py-1.5 bg-red-100
     }
 
     /* Button */
