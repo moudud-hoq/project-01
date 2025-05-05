@@ -46,6 +46,7 @@ $(document).ready(function () {
     });
 
 
+    // Our Happy Customers SLider
     $('.slider-for').slick({
         slidesToShow: 3, // or 1 or 2 based on your design
         slidesToScroll: 1,
