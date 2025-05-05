@@ -27,9 +27,9 @@ body {
 
 .product-img-effect:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease, margin-top 0.3s ease;
-    transform: scale(1.10) rotate(.3deg);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+    transform: scale(1) rotate(.1deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 4px;
 }
 
 
