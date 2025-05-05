@@ -629,126 +629,132 @@
     </div>
 
 
-    <!-- Stay Up to Date -->
-    <div class="stay-up-to-date-area">
-        <div class="stayUpToDateArea-wrapper max-w-[1240px] mx-auto px-4">
-            <div
-                class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 md:px-16 py-9 bg-black rounded-xl">
+    <!-- Footer Container -->
+    <div class="footer-container relative mt-[80px]">
 
-                <!-- Text Area -->
-                <div class="md:w-1/2 text-center md:text-left">
-                    <h1 class="fontaddintegral text-[32px] md:text-[40px] text-white font-bold leading-tight">
-                        Stay Up to Date About Our Latest Offers
-                    </h1>
-                </div>
-
-                <!-- Search & Subscribe Area -->
-                <div class="md:w-[349px] w-full space-y-3">
-                    <div class="search-field flex items-center gap-2 bg-[#F0F0F0] px-4 py-3 rounded-full">
-                        <button class="search-button rounded-full">
-                            <img src="./src/jpg/search.png" alt="Search Icon" class="w-5 h-5">
-                        </button>
-                        <input type="text" placeholder="Search for products"
-                            class="search-input w-full outline-none bg-transparent text-sm placeholder:text-gray-600">
+        <!-- Stay Up to Date - Positioned absolutely above footer -->
+        <div class="stay-up-to-date-area absolute w-full top-0 transform -translate-y-1/2">
+            <div class="stayUpToDateArea-wrapper max-w-[1240px] mx-auto px-4">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 md:px-16 py-9 bg-black rounded-xl">
+                    <!-- Text Area -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="fontaddintegral text-[32px] md:text-[40px] text-white font-bold leading-tight">
+                            Stay Up to Date About Our Latest Offers
+                        </h1>
                     </div>
-                    <button
-                        class="w-full text-[16px] bg-white text-black font-medium py-3 rounded-full transition hover:bg-gray-200">
-                        Subscribe to Newsletter
-                    </button>
+
+                    <!-- Search & Subscribe Area -->
+                    <div class="md:w-[349px] w-full space-y-3">
+                        <div class="search-field flex items-center gap-2 bg-[#F0F0F0] px-4 py-3 rounded-full">
+                            <button class="search-button rounded-full">
+                                <img src="./src/jpg/search.png" alt="Search Icon" class="w-5 h-5">
+                            </button>
+                            <input type="text" placeholder="Search for products"
+                                class="search-input w-full outline-none bg-transparent text-sm placeholder:text-gray-600">
+                        </div>
+                        <button
+                            class="w-full text-[16px] bg-white text-black font-medium py-3 rounded-full transition hover:bg-gray-200">
+                            Subscribe to Newsletter
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer-area bg-[#F0F0F0] py-24">
-        <div class="footer-wrapper max-w-[1240px] mx-auto px-4 pt-36">
-            <!-- Footer Top -->
-            <div class="footer-top">
-                <div class="footer-top-w pb-12 flex flex-col lg:flex-row flex-wrap gap-12 justify-between">
-                    <!-- Column 1: Logo & Text -->
-                    <div
-                        class="w-full lg:w-[24%] lg:pr-[40px] flex flex-col justify-between items-center lg:items-start">
-                        <div class="logoAndTitle">
-                            <a href="#"><img src="./src/jpg/SHOP.CO.png" alt=""></a>
-                            <p class="text-sm font-normal pt-6 text-gray-700 leading-relaxed">
-                                We have clothes that suit your style and which you’re proud to wear. From women to men.
-                            </p>
+        <!-- Footer -->
+        <div class="footer-area bg-[#F0F0F0] pt-24">
+            <!-- Added pt-24 to create space for the absolute positioned element -->
+            <div class="footer-wrapper max-w-[1240px] mx-auto px-4 pt-[50px]">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="footer-top-w pb-12 flex flex-col lg:flex-row flex-wrap gap-12 justify-between">
+                        <!-- Column 1: Logo & Text -->
+                        <div
+                            class="w-full lg:w-[24%] lg:pr-[40px] flex flex-col justify-between items-center lg:items-start">
+                            <div class="logoAndTitle">
+                                <a href="#"><img src="./src/jpg/SHOP.CO.png" alt=""></a>
+                                <p class="text-sm font-normal pt-6 text-gray-700 leading-relaxed">
+                                    We have clothes that suit your style and which you're proud to wear. From women to
+                                    men.
+                                </p>
+                            </div>
+                            <div class="social-logo flex pt-6 gap-3">
+                                <a href="https://twitter.com" target="_blank">
+                                    <img src="./src/jpg/footer/twitter.png" alt="twitter" class="bankLogo">
+                                </a>
+                                <a href="https://facebook.com" target="_blank">
+                                    <img src="./src/jpg/footer/facebook.png" alt="facebook" class="bankLogo">
+                                </a>
+                                <a href="https://instagram.com" target="_blank">
+                                    <img src="./src/jpg/footer/instagram.png" alt="instagram" class="bankLogo">
+                                </a>
+                                <a href="https://github.com" target="_blank">
+                                    <img src="./src/jpg/footer/github.png" alt="github" class="bankLogo">
+                                </a>
+                            </div>
                         </div>
-                        <div class="social-logo flex pt-6 gap-3">
-                            <a href="https://twitter.com" target="_blank">
-                                <img src="./src/jpg/footer/twitter.png" alt="twitter" class="bankLogo">
-                            </a>
-                            <a href="https://facebook.com" target="_blank">
-                                <img src="./src/jpg/footer/facebook.png" alt="facebook" class="bankLogo">
-                            </a>
-                            <a href="https://instagram.com" target="_blank">
-                                <img src="./src/jpg/footer/instagram.png" alt="instagram" class="bankLogo">
-                            </a>
-                            <a href="https://github.com" target="_blank">
-                                <img src="./src/jpg/footer/github.png" alt="github" class="bankLogo">
-                            </a>
+
+                        <!-- Column 2: Company -->
+                        <div class="w-full sm:w-[48%] lg:w-[14%]">
+                            <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Company</h3>
+                            <ul class="flex flex-col gap-4 text-sm text-gray-700">
+                                <li><a href="#" class="common-design-of-footer-menu">About</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Features</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Works</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Career</a></li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <!-- Column 2: Company -->
-                    <div class="w-full sm:w-[48%] lg:w-[14%]">
-                        <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Company</h3>
-                        <ul class="flex flex-col gap-4 text-sm text-gray-700">
-                            <li><a href="#" class="common-design-of-footer-menu">About</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Features</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Works</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Career</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 3: Help -->
+                        <div class="w-full sm:w-[48%] lg:w-[14%]">
+                            <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Help</h3>
+                            <ul class="flex flex-col gap-4 text-sm text-gray-700">
+                                <li><a href="#" class="common-design-of-footer-menu">Customer Support</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Delivery Details</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Orders</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Privacy Policy</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Column 3: Help -->
-                    <div class="w-full sm:w-[48%] lg:w-[14%]">
-                        <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Help</h3>
-                        <ul class="flex flex-col gap-4 text-sm text-gray-700">
-                            <li><a href="#" class="common-design-of-footer-menu">Customer Support</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Delivery Details</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Orders</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Privacy Policy</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 4: FAQ -->
+                        <div class="w-full sm:w-[48%] lg:w-[14%]">
+                            <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Faq</h3>
+                            <ul class="flex flex-col gap-4 text-sm text-gray-700">
+                                <li><a href="#" class="common-design-of-footer-menu">Account</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Manage Deliveries</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Orders</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Payments</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Column 4: FAQ -->
-                    <div class="w-full sm:w-[48%] lg:w-[14%]">
-                        <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Faq</h3>
-                        <ul class="flex flex-col gap-4 text-sm text-gray-700">
-                            <li><a href="#" class="common-design-of-footer-menu">Account</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Manage Deliveries</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Orders</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Payments</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 5: Resources -->
-                    <div class="w-full sm:w-[48%] lg:w-[14%]">
-                        <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Resources</h3>
-                        <ul class="flex flex-col gap-4 text-sm text-gray-700">
-                            <li><a href="#" class="common-design-of-footer-menu">Free eBooks</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Development Tutorials</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">How to - Blog</a></li>
-                            <li><a href="#" class="common-design-of-footer-menu">Youtube Playlist</a></li>
-                        </ul>
+                        <!-- Column 5: Resources -->
+                        <div class="w-full sm:w-[48%] lg:w-[14%]">
+                            <h3 class="text-lg font-medium uppercase tracking-widest pb-6">Resources</h3>
+                            <ul class="flex flex-col gap-4 text-sm text-gray-700">
+                                <li><a href="#" class="common-design-of-footer-menu">Free eBooks</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Development Tutorials</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">How to - Blog</a></li>
+                                <li><a href="#" class="common-design-of-footer-menu">Youtube Playlist</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Divider -->
-            <hr class="border-gray-300 my-8">
+                <!-- Divider -->
+                <hr class="border-gray-300 my-8">
 
-            <!-- Footer Bottom -->
-            <div class="footer-bottom-wrapper flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-sm text-gray-600">Shop.co © 2000-2023, All Rights Reserved</p>
-                <div class="social-icons flex gap-4">
-                    <a href="#"><img src="./src/jpg/footer/visa.png" alt="Visa" class="bankLogo"></a>
-                    <a href="#"><img src="./src/jpg/footer/payoneer.png" alt="Payoneer" class="bankLogo"></a>
-                    <a href="#"><img src="./src/jpg/footer/paypal.png" alt="PayPal" class="bankLogo"></a>
-                    <a href="#"><img src="./src/jpg/footer/pay.png" alt="Pay" class="bankLogo"></a>
-                    <a href="#"><img src="./src/jpg/footer/gpay.png" alt="GPay" class="bankLogo"></a>
+                <!-- Footer Bottom -->
+                <div
+                    class="footer-bottom-wrapper flex flex-col md:flex-row justify-between items-center gap-6 pb-[88px]">
+                    <p class="text-sm text-gray-600">Shop.co © 2000-2023, All Rights Reserved</p>
+                    <div class="social-icons flex gap-4">
+                        <a href="#"><img src="./src/jpg/footer/visa.png" alt="Visa" class="bankLogo"></a>
+                        <a href="#"><img src="./src/jpg/footer/payoneer.png" alt="Payoneer" class="bankLogo"></a>
+                        <a href="#"><img src="./src/jpg/footer/paypal.png" alt="PayPal" class="bankLogo"></a>
+                        <a href="#"><img src="./src/jpg/footer/pay.png" alt="Pay" class="bankLogo"></a>
+                        <a href="#"><img src="./src/jpg/footer/gpay.png" alt="GPay" class="bankLogo"></a>
+                    </div>
                 </div>
             </div>
         </div>
