@@ -44,7 +44,7 @@
 
     /* Button */
     .viewall {
-        @apply text-[16px] font-normal py-4 px-[54px] rounded-full border-2 border-gray-200 bg-amber-100 scale-105 hover:shadow-lg transition duration-300 ease-in-out transform;
+        @apply text-[16px] font-normal py-4 px-[54px] rounded-full border-2 border-gray-200 hover:bg-amber-100 hover:shadow-lg transition duration-300 ease-in-out transform;
     }
 
 
