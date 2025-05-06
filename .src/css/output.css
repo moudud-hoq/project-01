@@ -213,9 +213,6 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
-  .right-5 {
-    right: calc(var(--spacing) * 5);
-  }
   .right-20 {
     right: calc(var(--spacing) * 20);
   }
@@ -291,14 +288,8 @@
   .hidden {
     display: none;
   }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
@@ -579,10 +570,6 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
   .text-\[16px\] {
     font-size: 16px;
   }
@@ -622,6 +609,9 @@
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
   }
   .text-black {
     color: var(--color-black);
@@ -698,35 +688,9 @@
       }
     }
   }
-  .sm\:right-8 {
-    @media (width >= 40rem) {
-      right: calc(var(--spacing) * 8);
-    }
-  }
-  .sm\:h-5 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 5);
-    }
-  }
-  .sm\:w-5 {
-    @media (width >= 40rem) {
-      width: calc(var(--spacing) * 5);
-    }
-  }
   .sm\:w-\[48\%\] {
     @media (width >= 40rem) {
       width: 48%;
-    }
-  }
-  .sm\:px-6 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-  }
-  .sm\:text-sm {
-    @media (width >= 40rem) {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .md\:w-1\/2 {
@@ -764,11 +728,6 @@
       font-size: 40px;
     }
   }
-  .lg\:right-20 {
-    @media (width >= 64rem) {
-      right: calc(var(--spacing) * 20);
-    }
-  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -792,11 +751,6 @@
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
-    }
-  }
-  .lg\:px-8 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .lg\:pr-\[40px\] {
