@@ -33,6 +33,7 @@
 
 <body>
     <header class="">
+        <!-- Header Top Sign Up Button Section -->
         <section class="bg-black">
             <div class="head-top w-full mx-auto relative py-2.5 px-4 sm:px-6 lg:px-8">
                 <div class="signup text-center text-xs sm:text-sm text-white font-satoshi z-10">
@@ -52,49 +53,83 @@
                 </div>
             </div>
         </section>
-
-
-
+        
+        <!-- Header Bottom Section -->
         <section class="head-bottom max-w-[1240px] m-auto pt-6 pb-16 font-satoshi text-[16px] font-normal">
-            <div class="flex items-center justify-between gap-10">
-                <div class="logo w-[160px]">
-                    <img src="./src/jpg/SHOP.CO.png" alt="Logo">
+            <!-- Mobile Header -->
+            <div class="lg:hidden flex items-center justify-between px-4">
+              <!-- Left: Hamburger + Logo -->
+              <div class="flex items-center gap-3">
+                <button id="mobileMenuToggle" class="text-black focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+                <div class="logo w-[100px]">
+                  <img src="./src/jpg/SHOP.CO.png" alt="Logo" class="w-full">
                 </div>
-
-                <div class="menu w-[330px]">
-                    <div class="nav">
-                        <ul class="flex items-center gap-5">
-                            <li class="relative group">
-                                <a href="#" class="flex items-center gap-1">
-                                    Shop
-                                    <span><img src="./src/jpg/lowerarrow.png" alt="Dropdown arrow"></span>
-                                </a>
-                                <div
-                                    class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2 min-w-[200px] z-10">
-                                    <a href="#" class="block  hover:bg-gray-100">Men's Fashion</a>
-                                    <a href="#" class="block  hover:bg-gray-100">Women's Fashion</a>
-                                    <a href="#" class="block  hover:bg-gray-100">Kids' Collection</a>
-                                </div>
-                            </li>
-                            <li><a href="#">On Sale</a></li>
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Brands</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="search-field flex items-center gap-1.5 w-[577px] bg-[#F0F0F0] rounded-full px-4 py-3">
-                    <button class="search-button"><img src="./src/jpg/search.png" alt=""> </button>
-                    <input type="text" placeholder="Search for products" class="search-input w-full outline-none ">
-                </div>
-                <div class="ecom">
-                    <div class=" flex items-center gap-3.5 py-3 px-4">
-                        <a href="#"> <img src="./src/jpg/account.png" alt="">
-                            <a href="#"> </a> <img src="./src/jpg/addtocart.png" alt="">
-                    </div>
-                </div>
+              </div>
+              <!-- Right: Search, Cart, Account -->
+              <div class="flex items-center gap-3">
+                <button><img src="./src/jpg/search.png" alt="Search" class="w-5 h-5"></button>
+                <a href="#"><img src="./src/jpg/addtocart.png" alt="Cart" class="w-5 h-5"></a>
+                <a href="#"><img src="./src/jpg/account.png" alt="Account" class="w-5 h-5"></a>
+              </div>
             </div>
-        </section>
+          
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobileMenu" class="lg:hidden hidden px-4 mt-4">
+              <ul class="flex flex-col gap-4 text-black bg-gray-100 p-4 rounded-md">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+              </ul>
+            </div>
+          
+            <!-- Desktop Header -->
+            <div class="hidden lg:flex items-center justify-between gap-10">
+              <div class="logo w-[160px]">
+                <img src="./src/jpg/SHOP.CO.png" alt="Logo">
+              </div>
+          
+              <div class="menu w-[330px]">
+                <div class="nav">
+                  <ul class="flex items-center gap-5">
+                    <li class="relative group">
+                      <a href="#" class="flex items-center gap-1">
+                        Shop
+                        <span><img src="./src/jpg/lowerarrow.png" alt="Dropdown arrow"></span>
+                      </a>
+                      <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2 min-w-[200px] z-10">
+                        <a href="#" class="block hover:bg-gray-100">Men's Fashion</a>
+                        <a href="#" class="block hover:bg-gray-100">Women's Fashion</a>
+                        <a href="#" class="block hover:bg-gray-100">Kids' Collection</a>
+                      </div>
+                    </li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="search-field flex items-center gap-1.5 w-[577px] bg-[#F0F0F0] rounded-full px-4 py-3">
+                <button class="search-button"><img src="./src/jpg/search.png" alt=""></button>
+                <input type="text" placeholder="Search for products" class="search-input w-full outline-none">
+              </div>
+          
+              <div class="ecom">
+                <div class="flex items-center gap-3.5 py-3 px-4">
+                  <a href="#"><img src="./src/jpg/account.png" alt=""></a>
+                  <a href="#"><img src="./src/jpg/addtocart.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
     </header>
 
     <!-- Hero Section -->
@@ -773,12 +808,8 @@
 
     <!-- Magnific Popup JS -->
     <script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-
-    <script>
-
-
-    </script>
-
+    <!-- Main JS -->
+     <script src="./src/js/main.js"></script>
 
 </body>
 
