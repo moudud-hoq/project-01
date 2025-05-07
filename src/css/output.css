@@ -576,8 +576,29 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .bg-\[\#470202\] {
+    background-color: #470202;
+  }
+  .bg-\[\#979797\] {
+    background-color: #979797;
+  }
   .bg-\[\#F0F0F0\] {
     background-color: #F0F0F0;
+  }
+  .bg-\[\#dddada\] {
+    background-color: #dddada;
+  }
+  .bg-\[\#e7e7e7\] {
+    background-color: #e7e7e7;
+  }
+  .bg-\[\#f0f0f0\] {
+    background-color: #f0f0f0;
+  }
+  .bg-\[\#f0f0f3\] {
+    background-color: #f0f0f3;
+  }
+  .bg-\[\#f2f0f0\] {
+    background-color: #f2f0f0;
   }
   .bg-\[\#f2f0f1\] {
     background-color: #f2f0f1;
