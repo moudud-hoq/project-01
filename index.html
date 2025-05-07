@@ -247,7 +247,7 @@
             <h1 class="pb-14 text-center fontaddintegral text-5xl font-bold">New Arrivals</h1>
 
             <div class="product-wrapper">
-                <div class="products grid grid-cols-2  lg:grid-cols-4 gap-5">
+                <div class="products grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
 
                     <!-- Product1 -->
                     <div class="single-product">
@@ -383,7 +383,7 @@
         <h1 class="pb-14 text-center fontaddintegral text-5xl font-bold">Top Selling </h1>
 
         <div class="product-wrapper">
-            <div class="products flex gap-5">
+            <div class="products  grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
 
                 <!-- Product1 -->
                 <div class="single-product">
@@ -394,7 +394,7 @@
                     </div>
                     <div class="product-detailws flex flex-col gap-2">
                         <h3 class="product-title">T-shirt with Tape Details</h3>
-                        <div class="flex gap-11">
+                        <div class="flex gap-6">
                             <div class="flex">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/fullstar.png" alt="">
@@ -402,7 +402,7 @@
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/halfstar.png" alt="">
                             </div>
-                            <div class=" pl-3.5">
+                            <div class="">
                                 <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
                             </div>
                         </div>
@@ -421,14 +421,14 @@
                     </div>
                     <div class="product-detailws flex flex-col gap-2">
                         <h3 class="product-title">Skinny Fit Jeans</h3>
-                        <div class="flex gap-11">
+                        <div class="flex gap-6">
                             <div class="flex">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/halfstar.png" alt="">
                             </div>
-                            <div class=" pl-3.5">
+                            <div class="">
                                 <p class="text-sm">3.5/<span class="text-gray-400">5</span></p>
                             </div>
                         </div>
@@ -450,7 +450,7 @@
                     </div>
                     <div class="product-detailws flex flex-col gap-2">
                         <h3 class="product-title">Checkered Shirt</h3>
-                        <div class="flex gap-11">
+                        <div class="flex gap-6">
                             <div class="flex">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/fullstar.png" alt="">
@@ -458,7 +458,7 @@
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/halfstar.png" alt="">
                             </div>
-                            <div class=" pl-3.5">
+                            <div class="">
                                 <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
                             </div>
                         </div>
@@ -477,7 +477,7 @@
                     </div>
                     <div class="product-detailws flex flex-col gap-2">
                         <h3 class="product-title">Sleeve Striped T-shirt</h3>
-                        <div class="flex gap-11">
+                        <div class="flex gap-6">
                             <div class="flex">
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/fullstar.png" alt="">
@@ -485,7 +485,7 @@
                                 <img src="./src/jpg/fullstar.png" alt="">
                                 <img src="./src/jpg/halfstar.png" alt="">
                             </div>
-                            <div class=" pl-3.5">
+                            <div class="">
                                 <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
                             </div>
                         </div>
@@ -508,42 +508,44 @@
     </section>
 
     <!-- Browse By Dress Style -->
-    <section class="browseByDressStyle ">
-        <div class="browseByDressStyle-wrapper w-[1240px] mx-auto bg-[#F0F0F0] rounded-[40px] pt-[70px]">
-            <h1 class=" text-center fontaddintegral text-5xl font-bold">Browse By Dress Style</h1>
+    <section class="browseByDressStyle">
+        <div
+            class="browseByDressStyle-wrapper w-full lg:w-[1240px] mx-auto bg-[#F0F0F0] rounded-[20px] lg:rounded-[40px] pt-[40px] lg:pt-[70px] px-4 lg:px-0">
+            <h1 class="text-center fontaddintegral text-3xl lg:text-5xl font-bold">Browse By Dress Style</h1>
 
             <!-- Grid container -->
-            <div class="gridcontainer grid grid-cols-12 grid-rows-2 gap-5 p-16">
-                <!-- Row 1 -->
-                <div class="col-span-5 row-start-1 gridSingleContainer">
-                    <div class="flex justify-between">
-                        <h3 class=" pl-9 pt-6 text-4xl font-bold">Casual</h3>
-                        <img src="./src/jpg/bbds1.png" alt="" class="">
+            <div
+                class="gridcontainer grid grid-cols-1 lg:grid-cols-12 grid-rows-4 lg:grid-rows-2 gap-4 lg:gap-5 p-4 lg:p-16">
+
+                <div class="row-span-1 lg:col-span-5 row-start-1 lg:row-start-1 gridSingleContainer h-full">
+                    <div class="flex justify-between h-full">
+                        <h3 class="brstylehead">Casual</h3>
+                        <img src="./src/jpg/bbds1.png" alt="" class="w-34 lg:w-auto">
                     </div>
                 </div>
-                <div class="col-span-7 row-start-1 gridSingleContainer">
-                    <div class="flex justify-between ">
-                        <h3 class=" pl-9 pt-6 text-4xl font-bold">Formal</h3>
-                        <img src="./src/jpg/bbds2.png" alt="" class="">
+                
+                <div class="row-span-1 lg:col-span-7 row-start-2 lg:row-start-1 gridSingleContainer h-full">
+                    <div class="flex justify-between h-full">
+                        <h3 class="brstylehead">Formal</h3>
+                        <img src="./src/jpg/bbds2.png" alt="" class="w-34 lg:w-auto">
                     </div>
                 </div>
 
-                <!-- Row 2 -->
-                <div class="col-span-7 row-start-2 gridSingleContainer">
-                    <div class="flex justify-between">
-                        <h3 class=" pl-9 pt-6 text-4xl font-bold">Party</h3>
-                        <img src="./src/jpg/bbds3.png" alt="" class="">
+                <div class="row-span-1 lg:col-span-7 row-start-3 lg:row-start-2 gridSingleContainer h-full">
+                    <div class="flex justify-between h-full">
+                        <h3 class="brstylehead">Party</h3>
+                        <img src="./src/jpg/bbds3.png" alt="" class="w-34 lg:w-auto">
                     </div>
                 </div>
-                <div class="col-span-5 row-start-2 gridSingleContainer">
-                    <div class="flex justify-between">
-                        <h3 class=" pl-9 pt-6 text-4xl font-bold">Gym</h3>
-                        <img src="./src/jpg/bbds4.png" alt="" class="">
+
+                <div class="row-span-1 lg:col-span-5 row-start-4 lg:row-start-2 gridSingleContainer h-full">
+                    <div class="flex justify-between h-full">
+                        <h3 class="brstylehead">Gym</h3>
+                        <img src="./src/jpg/bbds4.png" alt="" class="w-34 lg:w-auto">
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Happy Customers Area -->
