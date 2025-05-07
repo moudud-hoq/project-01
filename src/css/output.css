@@ -328,6 +328,9 @@
   .mt-\[150px\] {
     margin-top: 150px;
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .mb-18 {
     margin-bottom: calc(var(--spacing) * 18);
   }
@@ -944,6 +947,11 @@
       grid-row-start: 3;
     }
   }
+  .sm\:mb-0 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -1258,6 +1266,11 @@
       margin-top: 107px;
     }
   }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:mb-18 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 18);
@@ -1466,6 +1479,11 @@
   .lg\:pt-16 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:pt-24 {
