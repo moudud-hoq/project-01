@@ -148,10 +148,10 @@
 
     <!-- Hero Section -->
     <section class="hero-section px-4 bg-[#f2f0f1]">
-        <div class="hero-wrapper w-full max-w-[1240px] mx-auto lg:flex gap-10 ">
+        <div class="hero-wrapper w-full max-w-[1240px] mx-auto lg:flex gap-10 pt-10 lg:pt-32">
 
             <!-- Title and Description -->
-            <div class="hero-left w-full lg:w-1/2 flex flex-col mb-18">
+            <div class="hero-left w-full lg:w-1/2 flex flex-col lg:mb-18">
                 <div>
                     <h1
                         class="fontaddintegral uppercase text-[36px] md:text-[48px] lg:text-[64px] font-bold leading-tight pb-6 lg:pb-8 text-left">
@@ -241,19 +241,155 @@
 
     <!-- Product Area -->
     <section class="product-area ">
-
         <!-- New Arrivals -->
-        <section class="new-arrivals pt-[72px] pb-16 lg:w-[1240px] mx-auto">
-            <h1 class="pb-14 text-center fontaddintegral text-[32px] lg:text-5xl font-bold">New Arrivals</h1>
+        <section
+            class="new-arrivals pt-[40px] sm:pt-[60px] lg:pt-[72px] pb-10 lg:pb-16 w-full px-4 sm:px-6 lg:px-0 lg:w-[1240px] mx-auto">
+            <h1
+                class="pb-8 sm:pb-10 lg:pb-14 text-center fontaddintegral text-2xl sm:text-3xl lg:text-[32px] lg:text-5xl font-bold">
+                New Arrivals</h1>
 
             <div class="product-wrapper">
-                <div class="products grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
+                <div class="products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+
+                    <!-- Product1 -->
+                    <div class="single-product">
+                        <div class="sngle-product-image pb-3 sm:pb-4">
+                            <a href="./src/jpg/product01.png" class="popup-link block w-full">
+                                <img src="./src/jpg/product01.png" alt="Product 01"
+                                    class="rounded-lg product-img-effect w-full h-auto">
+                            </a>
+                        </div>
+                        <div class="product-detailws flex flex-col gap-2">
+                            <h3 class="product-title text-lg sm:text-base">T-shirt with Tape Details</h3>
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/halfstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                </div>
+                                <div class="">
+                                    <p class="text-xs sm:text-sm">4.5/<span class="text-gray-400">5</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 sm:gap-2.5">
+                                <div class="price text-xl sm:text-2xl font-bold">$120</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product2 -->
+                    <div class="single-product">
+                        <div class="sngle-product-image pb-3 sm:pb-4">
+                            <a href="./src/jpg/product02.png" class="popup-link block w-full">
+                                <img src="./src/jpg/product02.png" alt="Product 02"
+                                    class="rounded-lg product-img-effect w-full h-auto">
+                            </a>
+                        </div>
+                        <div class="product-detailws flex flex-col gap-2">
+                            <h3 class="product-title text-lg sm:text-base">Skinny Fit Jeans</h3>
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/halfstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                </div>
+                                <div class="">
+                                    <p class="text-xs sm:text-sm">3.5/<span class="text-gray-400">5</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 sm:gap-2.5">
+                                <div class="price text-xl sm:text-2xl font-bold">$240</div>
+                                <div class="discount text-xl sm:text-2xl font-bold text-gray-400">$260</div>
+                                <div class="off text-sm">-20%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product3 -->
+                    <div class="single-product hidden sm:block lg:block">
+                        <div class="sngle-product-image pb-3 sm:pb-4">
+                            <a href="./src/jpg/product03.png" class="popup-link block w-full">
+                                <img src="./src/jpg/product03.png" alt="Product 03"
+                                    class="rounded-lg product-img-effect w-full h-auto">
+                            </a>
+                        </div>
+                        <div class="product-detailws flex flex-col gap-2">
+                            <h3 class="product-title text-lg sm:text-base">Checkered Shirt</h3>
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/halfstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                </div>
+                                <div class="">
+                                    <p class="text-xs sm:text-sm">4.5/<span class="text-gray-400">5</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 sm:gap-2.5">
+                                <div class="price text-xl sm:text-2xl font-bold">$180</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product4  -->
+                    <div class="single-product hidden lg:block">
+                        <div class="sngle-product-image pb-3 sm:pb-4">
+                            <a href="./src/jpg/product04.png" class="popup-link block w-full">
+                                <img src="./src/jpg/product04.png" alt="Product 04"
+                                    class="rounded-lg product-img-effect w-full h-auto">
+                            </a>
+                        </div>
+                        <div class="product-detailws flex flex-col gap-2">
+                            <h3 class="product-title text-lg sm:text-base">Sleeve Striped T-shirt</h3>
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/fullstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                    <img src="./src/jpg/halfstar.png" alt="" class="w-4 h-4 sm:w-auto sm:h-auto">
+                                </div>
+                                <div class="">
+                                    <p class="text-xs sm:text-sm">4.5/<span class="text-gray-400">5</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 sm:gap-2.5">
+                                <div class="price text-xl sm:text-2xl font-bold">$130</div>
+                                <div class="discount text-xl sm:text-2xl font-bold text-gray-400">$160</div>
+                                <div class="off text-sm">-30%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="flex justify-center pt-10 sm:pt-12 lg:pt-16 px-4 sm:px-0">
+                    <button
+                        class="viewall w-full sm:w-auto px-6 py-3 sm:px-4 sm:py-2 lg:px-6 lg:py-3 text-sm sm:text-base">
+                        View All
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-auto lg:w-[1240px]  border-gray-100">
+        <!-- Top Selling -->
+        <section
+            class="new-arrivals pt-[40px] sm:pt-[60px] lg:pt-[72px] pb-10 lg:pb-16 w-full px-4 sm:px-6 lg:px-0 lg:w-[1240px] mx-auto">
+            <h1 class="pb-14 text-center fontaddintegral text-[32px] lg:text-5xl font-bold">Top Selling </h1>
+
+            <div class="product-wrapper">
+                <div class="products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
 
                     <!-- Product1 -->
                     <div class="single-product">
                         <div class="sngle-product-image pb-4">
-                            <a href="./src/jpg/product01.png" class="popup-link w-48">
-                                <img src="./src/jpg/product01.png" alt="Product 01"
+                            <a href="./src/jpg/product05.png" class="popup-link w-48">
+                                <img src="./src/jpg/product05.png" alt="Product 01"
                                     class="rounded-lg product-img-effect">
                             </a>
                         </div>
@@ -280,8 +416,8 @@
                     <!-- Product2 -->
                     <div class="single-product">
                         <div class="sngle-product-image pb-4">
-                            <a href="./src/jpg/product02.png" class="popup-link w-60">
-                                <img src="./src/jpg/product02.png" alt="Product 01"
+                            <a href="./src/jpg/product06.png" class="popup-link w-60">
+                                <img src="./src/jpg/product06.png" alt="Product 01"
                                     class="rounded-lg product-img-effect">
                             </a>
                         </div>
@@ -308,10 +444,10 @@
                     </div>
 
                     <!-- Product3 -->
-                    <div class="single-product">
+                    <div class="single-product hidden sm:block lg:block">
                         <div class="sngle-product-image pb-4">
-                            <a href="./src/jpg/product03.png" class="popup-link w-48">
-                                <img src="./src/jpg/product03.png" alt="Product 01"
+                            <a href="./src/jpg/product07.png" class="popup-link w-48">
+                                <img src="./src/jpg/product07.png" alt="Product 01"
                                     class="rounded-lg product-img-effect">
                             </a>
                         </div>
@@ -336,10 +472,10 @@
                     </div>
 
                     <!-- Product4 -->
-                    <div class="single-product">
+                    <div class="single-product hidden lg:block">
                         <div class="sngle-product-image pb-4">
-                            <a href="./src/jpg/product04.png" class="popup-link w-48">
-                                <img src="./src/jpg/product04.png" alt="Product 01"
+                            <a href="./src/jpg/product08.png" class="popup-link w-48">
+                                <img src="./src/jpg/product08.png" alt="Product 01"
                                     class="rounded-lg product-img-effect">
                             </a>
                         </div>
@@ -368,145 +504,14 @@
 
                 </div>
                 <!-- View All Button -->
-                <div class="flex justify-center pt-16 ">
+                <div class="flex justify-center pb-16 pt-10 ">
                     <button class="viewall">View
                         All</button>
                 </div>
             </div>
         </section>
     </section>
-
-    <hr class="mx-auto lg:w-[1240px]  border-gray-100">
-
-    <!-- Top Selling -->
-    <section class="top-selling pt-[72px] pb-16 lg:w-[1240px] mx-auto">
-        <h1 class="pb-14 text-center fontaddintegral text-[32px] lg:text-5xl font-bold">Top Selling </h1>
-
-        <div class="product-wrapper">
-            <div class="products  grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
-
-                <!-- Product1 -->
-                <div class="single-product">
-                    <div class="sngle-product-image pb-4">
-                        <a href="./src/jpg/product05.png" class="popup-link w-48">
-                            <img src="./src/jpg/product05.png" alt="Product 01" class="rounded-lg product-img-effect">
-                        </a>
-                    </div>
-                    <div class="product-detailws flex flex-col gap-2">
-                        <h3 class="product-title">T-shirt with Tape Details</h3>
-                        <div class="flex gap-6">
-                            <div class="flex">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/halfstar.png" alt="">
-                            </div>
-                            <div class="">
-                                <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
-                            </div>
-                        </div>
-                        <div class="flex  items-center gap-2.5 ">
-                            <div class="price text-2xl font-bold">$120</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product2 -->
-                <div class="single-product">
-                    <div class="sngle-product-image pb-4">
-                        <a href="./src/jpg/product06.png" class="popup-link w-60">
-                            <img src="./src/jpg/product06.png" alt="Product 01" class="rounded-lg product-img-effect">
-                        </a>
-                    </div>
-                    <div class="product-detailws flex flex-col gap-2">
-                        <h3 class="product-title">Skinny Fit Jeans</h3>
-                        <div class="flex gap-6">
-                            <div class="flex">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/halfstar.png" alt="">
-                            </div>
-                            <div class="">
-                                <p class="text-sm">3.5/<span class="text-gray-400">5</span></p>
-                            </div>
-                        </div>
-                        <div class="flex  items-center gap-2.5 ">
-                            <div class="price text-2xl font-bold">$240</div>
-                            <div class="discount text-2xl font-bold text-gray-400">$260</div>
-                            <div class="off">
-                                -20%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product3 -->
-                <div class="single-product">
-                    <div class="sngle-product-image pb-4">
-                        <a href="./src/jpg/product07.png" class="popup-link w-48">
-                            <img src="./src/jpg/product07.png" alt="Product 01" class="rounded-lg product-img-effect">
-                        </a>
-                    </div>
-                    <div class="product-detailws flex flex-col gap-2">
-                        <h3 class="product-title">Checkered Shirt</h3>
-                        <div class="flex gap-6">
-                            <div class="flex">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/halfstar.png" alt="">
-                            </div>
-                            <div class="">
-                                <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
-                            </div>
-                        </div>
-                        <div class="flex  items-center gap-2.5 ">
-                            <div class="price text-2xl font-bold">$180</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product4 -->
-                <div class="single-product">
-                    <div class="sngle-product-image pb-4">
-                        <a href="./src/jpg/product08.png" class="popup-link w-48">
-                            <img src="./src/jpg/product08.png" alt="Product 01" class="rounded-lg product-img-effect">
-                        </a>
-                    </div>
-                    <div class="product-detailws flex flex-col gap-2">
-                        <h3 class="product-title">Sleeve Striped T-shirt</h3>
-                        <div class="flex gap-6">
-                            <div class="flex">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/fullstar.png" alt="">
-                                <img src="./src/jpg/halfstar.png" alt="">
-                            </div>
-                            <div class="">
-                                <p class="text-sm">4.5/<span class="text-gray-400">5</span></p>
-                            </div>
-                        </div>
-                        <div class="flex  items-center gap-2.5 ">
-                            <div class="price text-2xl font-bold">$130</div>
-                            <div class="discount text-2xl font-bold text-gray-400">$160</div>
-                            <div class="off">
-                                -30%</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- View All Button -->
-            <div class="flex justify-center pb-16 pt-10 ">
-                <button class="viewall">View
-                    All</button>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Browse By Dress Style -->
     <section class="browseByDressStyle px-4">
         <div>
