@@ -33,32 +33,46 @@ body {
 }
 
 
-/* Slick Slider Custom COde */
-/* Blur the non-centered slides */
-/* Blur everything by default */
+
+/* Our happy Customers Slider jQuery default style changed by custom css */
+/* Mobile: Show single card fully visible */
 .slider-for .slick-slide {
-    filter: blur(1px);
-    opacity: 0.5;
-    transition: filter 0.3s, opacity 0.3s;
-}
-
-/* Make only the 3 center cards fully visible */
-.slider-for .slick-center {
     filter: blur(0);
     opacity: 1;
 }
 
-/* Remove blur from the card before and after center */
-.slider-for .slick-center + .slick-slide,
-.slider-for .slick-center ~ .slick-slide.slick-cloned:first-of-type,
-.slider-for .slick-slide.slick-active:has(+ .slick-center),
-.slider-for .slick-center ~ .slick-slide:has(+ .slick-cloned) {
-    filter: blur(0);
-    opacity: 1;
+/* Large screens: Blur everything by default */
+@media (min-width: 1024px) {
+    .slider-for .slick-slide {
+        filter: blur(1px);
+        opacity: 0.5;
+        transition: filter 0.3s, opacity 0.3s;
+    }
+
+    /* Make only the 3 center cards fully visible */
+    .slider-for .slick-center {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    /* Remove blur from the card before and after center */
+    .slider-for .slick-center+.slick-slide,
+    .slider-for .slick-center~.slick-slide.slick-cloned:first-of-type,
+    .slider-for .slick-slide.slick-active:has(+ .slick-center),
+    .slider-for .slick-center~.slick-slide:has(+ .slick-cloned) {
+        filter: blur(0);
+        opacity: 1;
+    }
 }
 
 /* Slick Gap */
 .slider-for .slick-track {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+}
+
+@media (min-width: 1024px) {
+    .slider-for .slick-track {
+        gap: 20px;
+    }
 }

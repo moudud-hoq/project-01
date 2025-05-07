@@ -46,9 +46,8 @@ $(document).ready(function () {
     });
 
 
-    // Our Happy Customers SLider
     $('.slider-for').slick({
-        slidesToShow: 3, // or 1 or 2 based on your design
+        slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '60px',
@@ -62,13 +61,26 @@ $(document).ready(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: '60px'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: '30px'
+
                 }
             },
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    centerMode: false,
+                    centerPadding: '5px'
                 }
             }
         ]
