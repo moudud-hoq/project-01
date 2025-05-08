@@ -12,14 +12,16 @@ document.getElementById('mobileSearchToggle').addEventListener('click', function
     searchBar.classList.toggle('hidden');
 });
 
-// Leaflet JS Mpa
+/// Leaflet JS Map
 document.addEventListener("DOMContentLoaded", function () {
-    const map = L.map(document.querySelector(".map")); // No default center yet
+    const map = L.map(document.querySelector(".map"));
 
+    // Tile Layer
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    // Locations
     const locations = [
         { lat: 34.115784, lng: -118.198139, loc: "Highland Park", number: "323-555-9876" },
         { lat: 34.090009, lng: -118.361744, loc: "West Hollywood", number: "323-555-6789" },
@@ -31,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bounds = [];
 
+    // Add markers and popups
     locations.forEach(item => {
-        const marker = L.marker([item.lat, item.lng]).addTo(map)
+        L.marker([item.lat, item.lng])
+            .addTo(map)
             .bindPopup(`
                 <div style="font-family: Arial; font-size: 14px;">
                     <strong style="color: #333;">${item.loc}</strong><br>
@@ -41,11 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     </a>
                 </div>
             `);
-
         bounds.push([item.lat, item.lng]);
     });
 
-    map.fitBounds(bounds); // Automatically center and zoom to show all markers
+    // Auto-zoom & center the map
+    map.fitBounds(bounds);
 });
 
 
