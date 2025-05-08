@@ -14,25 +14,38 @@ document.getElementById('mobileSearchToggle').addEventListener('click', function
 
 // Leaflet JS Mpa
 document.addEventListener("DOMContentLoaded", function () {
-    var map = L.map(document.querySelector(".map")).setView([23.78954960892127, 90.39426629946628], 12);
-
+    const map = L.map(document.querySelector(".map")); // No default center yet
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-
-    var location = [
-        { lat: 23.731185704194495, lng: 90.40272681839151, loc: "কমলাপুর রেলওয়ে, ওয়ারি, শাহজাহানপুর", number: "০১৭৬৯-০৯২৪৬৪" },
-        { lat: 23.734644670240122, lng: 90.4260218723083, loc: "রমনা, সেগুনবাগিচা, সুপ্রিমকোর্ট", number: " ০১৭৬৯-০৯৫৪১৯" },
-        { lat: 23.73153590765672, lng: 90.4071378583267, loc: "পল্টন", number: " ০১৭৬৩-৯৩৯৮৫৭" },
-        { lat: 23.72333488055187, lng: 90.41246037371515, loc: "গুলিস্থান", number: " ০১৭৬৩-৯৩৯৮৫৭" },
+    const locations = [
+        { lat: 34.115784, lng: -118.198139, loc: "Highland Park", number: "323-555-9876" },
+        { lat: 34.090009, lng: -118.361744, loc: "West Hollywood", number: "323-555-6789" },
+        { lat: 34.147785, lng: -118.144516, loc: "Pasadena", number: "626-555-1234" },
+        { lat: 34.052235, lng: -118.243683, loc: "Los Angeles", number: "213-555-5678" },
+        { lat: 34.180839, lng: -118.308966, loc: "Burbank", number: "818-555-7890" },
+        { lat: 34.142507, lng: -118.255075, loc: "Glendale", number: "818-555-4321" },
     ];
 
-    location.forEach(function (location) {
-        L.marker([location.lat, location.lng])
-            .addTo(map)
-            .bindPopup("<b>" + location.loc + "</b><br>" + "<b>Contact:</b> <a href='tel:" + "' style='color: blue; text-decoration: underline;'>" + location.number + "</a>");
+    const bounds = [];
+
+    locations.forEach(item => {
+        const marker = L.marker([item.lat, item.lng]).addTo(map)
+            .bindPopup(`
+                <div style="font-family: Arial; font-size: 14px;">
+                    <strong style="color: #333;">${item.loc}</strong><br>
+                    📞 <a href="tel:${item.number}" style="color: #007BFF; text-decoration: none;">
+                        ${item.number}
+                    </a>
+                </div>
+            `);
+
+        bounds.push([item.lat, item.lng]);
     });
+
+    map.fitBounds(bounds); // Automatically center and zoom to show all markers
 });
+
 
