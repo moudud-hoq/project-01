@@ -37,6 +37,34 @@ $(document).ready(function () {
         ]
     });
 
+    // TYped Plugin
+    var typed = new Typed('#typewriter', {
+        strings: ['Your Style', 'Your Mood', 'Your Personality'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 500,
+        loop: true
+    });
+
+    $('.typewriter').each(function () {
+        var el = $(this);
+        var text = el.text();
+        el.html('');
+        var i = 0;
+        var timer = setInterval(function () {
+            if (i < text.length) {
+                el.append(text.charAt(i));
+                i++;
+            } else {
+                clearInterval(timer);
+            }
+        }, 100); // typing speed
+    });
+
+
+
+
     // Magnific Popup
     $('.popup-link').magnificPopup({
         type: 'image',

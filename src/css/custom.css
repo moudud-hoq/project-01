@@ -32,8 +32,6 @@ body {
     margin-top: 4px;
 }
 
-
-
 /* Our happy Customers Slider jQuery default style changed by custom css */
 /* Mobile: Show single card fully visible */
 .slider-for .slick-slide {
@@ -75,4 +73,11 @@ body {
     .slider-for .slick-track {
         gap: 20px;
     }
+}
+
+/* Custom CSS for the typed js */
+.typed-cursor {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
 }
