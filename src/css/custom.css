@@ -81,3 +81,20 @@ body {
     font-size: 30px;
     color: #000;
 }
+
+/* Typing GSAP */
+  .typingText {
+    background: linear-gradient(90deg, #000000, #310109, #5a0029);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    animation: shine 3s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }

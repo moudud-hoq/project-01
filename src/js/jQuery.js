@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // TYped Plugin
     var typed = new Typed('#typewriter', {
-        strings: ['Your Style', 'Your Mood'],
+        strings: ['Style', 'Mood'],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
