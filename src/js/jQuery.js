@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // TYped Plugin
     var typed = new Typed('#typewriter', {
-        strings: ['Your Style', 'Your Mood', 'Your Personality'],
+        strings: ['Your Style', 'Your Mood'],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -63,7 +63,15 @@ $(document).ready(function () {
     });
 
 
+    // GSAP Animation
+    gsap.registerPlugin(TextPlugin);
 
+    gsap.to("#animatedText", {
+        duration: 15,
+        text: "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+        ease: "power1.inOut",
+        delay: 0.5
+    });
 
     // Magnific Popup
     $('.popup-link').magnificPopup({
