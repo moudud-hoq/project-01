@@ -59,7 +59,7 @@ $(document).ready(function () {
             } else {
                 clearInterval(timer);
             }
-        }, 100); // typing speed
+        }, 50); // typing speed
     });
 
 
